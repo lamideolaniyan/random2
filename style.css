@@ -40,8 +40,7 @@ aside.tb p:last-of-type {
 	font-size: 30px;
 	color: #fff;
 	background-color: bisque;
-	position: relative;
-
+	height: 120vh;
 	outline: 1px solid yellowgreen;
 }
 
@@ -66,8 +65,9 @@ aside.tb p:last-of-type {
 
 .child-1 {
 	background-color: orangered;
-	position: absolute;
-	right: 20px;
+	position: sticky;
+	will-change: transform;
+	top: 0px;
 }
 .child-2 {
 	background-color: black;
@@ -80,4 +80,11 @@ aside.tb p:last-of-type {
 }
 .child-5 {
 	background-color: darkgreen;
+}
+
+.p2 {
+	background-color: black;
+	height: 150vh;
+	width: 53vw;
+	margin: 0 auto;
 }
