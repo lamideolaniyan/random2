@@ -1,5 +1,5 @@
-table {
-	border-collapse: collapse;
+/* body {
+	position: absolute;
 }
 
 th,
@@ -23,4 +23,61 @@ tbody {
 aside.tb p:last-of-type {
 	background-color: black;
 	color: #fff;
+}
+
+.table {
+	border-collapse: collapse;
+
+	position: relative;
+	top: 0;
+	right: 0;
+	margin-bottom: 100px; */
+
+.parent {
+	margin: 0 auto;
+	padding: 20px;
+	width: 50vw;
+	font-size: 30px;
+	color: #fff;
+	background-color: bisque;
+	position: relative;
+
+	outline: 1px solid yellowgreen;
+}
+
+.parent span {
+	display: inline-block;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 40px;
+	color: black;
+}
+
+.parent div {
+	padding: 20px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.parent div:last-of-type {
+	border-bottom: 1px solid black;
+}
+
+.child-1 {
+	background-color: orangered;
+	position: absolute;
+	right: 20px;
+}
+.child-2 {
+	background-color: black;
+}
+.child-3 {
+	background-color: royalblue;
+}
+.child-4 {
+	background-color: purple;
+}
+.child-5 {
+	background-color: darkgreen;
 }
