@@ -40,7 +40,6 @@ aside.tb p:last-of-type {
 	font-size: 30px;
 	color: #fff;
 	background-color: bisque;
-	height: 120vh;
 	outline: 1px solid yellowgreen;
 }
 
@@ -82,9 +81,45 @@ aside.tb p:last-of-type {
 	background-color: darkgreen;
 }
 
-.p2 {
-	background-color: black;
-	height: 150vh;
-	width: 53vw;
-	margin: 0 auto;
+.signup_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+	padding: 20px;
+}
+input {
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-top: 3px;
+	text-decoration: none;
+
+	font-family: inherit;
+	font-size: 100%;
+	padding: 5px 10px;
+
+	background-color: #d4e2e78a;
+	border: none;
+	transition: all 0.2s;
+}
+
+input:active,
+input:focus {
+	outline: 0;
+	transform: translateY(-2px);
+}
+label {
+	display: inline-block;
+	color: #333;
+}
+
+button {
+	border: none;
+	outline: 0;
+	color: #fff;
+	background-color: rgb(55, 0, 255);
+	padding: 7px 15px;
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 16px;
 }
