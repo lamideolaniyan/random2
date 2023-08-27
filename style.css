@@ -100,6 +100,8 @@ input {
 
 	background-color: #d4e2e78a;
 	border: none;
+	outline: 0;
+
 	transition: all 0.2s;
 }
 
@@ -107,7 +109,16 @@ input:active,
 input:focus {
 	outline: 0;
 	transform: translateY(-2px);
+	box-shadow: inset 1px 1px 3px #ccc;
 }
+input:valid {
+	outline: 1px solid rgb(47, 255, 82);
+}
+
+input:invalid {
+	outline: 1px solid red;
+}
+
 label {
 	display: inline-block;
 	color: #333;
